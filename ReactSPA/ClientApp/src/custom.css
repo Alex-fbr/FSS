@@ -1,14 +1,9 @@
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+#components-layout-demo-side .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
 }
 
-code {
-  color: #E01A76;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.site-layout .site-layout-background {
+    background: #fff;
 }

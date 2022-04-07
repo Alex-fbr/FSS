@@ -1,4 +1,25 @@
 import React, { Component } from 'react';
+import { Table, Radio, Divider } from 'antd';
+
+const columns = [
+  {
+    title: 'Date',
+    dataIndex: 'date',
+  },
+  {
+    title: 'Temp. (C)',
+    dataIndex: 'temperatureC',
+  },
+  {
+    title: 'Temp. (F)',
+    dataIndex: 'temperatureF',
+  },
+  {
+    title: 'Summary',
+    dataIndex: 'summary',
+  },
+];
+
 
 export class FetchData extends Component {
   static displayName = FetchData.name;
@@ -14,26 +35,10 @@ export class FetchData extends Component {
 
   static renderForecastsTable(forecasts) {
     return (
-      <table className='table table-striped' aria-labelledby="tabelLabel">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-            <th>Summary</th>
-          </tr>
-        </thead>
-        <tbody>
-          {forecasts.map(forecast =>
-            <tr key={forecast.date}>
-              <td>{forecast.date}</td>
-              <td>{forecast.temperatureC}</td>
-              <td>{forecast.temperatureF}</td>
-              <td>{forecast.summary}</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
+      <Table
+        columns={columns}
+        dataSource={forecasts}
+      />
     );
   }
 
