@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32210.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactSPA", "ReactSPA\ReactSPA.csproj", "{D96B3CF2-5590-4B50-A4E4-178272736AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactSPA", "ReactSPA\ReactSPA.csproj", "{D96B3CF2-5590-4B50-A4E4-178272736AFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{10359929-A750-431E-B3A4-218F26DF2A88}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
